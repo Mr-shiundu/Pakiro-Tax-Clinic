@@ -1,0 +1,276 @@
+/* Default Settings*/
+* {
+    padding: 10px;
+    align-items: center;
+    list-style-type: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: aqua;
+    align-items: center;
+    text-align: center;
+    list-style: none;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Hide horizontal overflow */
+}
+
+/*header*/
+
+header h1 {
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    font-size: 30px;
+    text-transform: initial;
+    font-family: italic;
+}
+
+/* Navigation bar styles */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    font-weight: bold;
+}
+
+nav a {
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    margin: 0 8px;
+}
+
+nav a:hover {
+    font-weight: bolder;
+}
+
+
+/* Background container
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('background.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(60px); /* Adjust blur amount as needed 
+    z-index: -1; /* Place behind other content 
+} */
+
+/* Content container */
+.content {
+    padding: 20px;
+    text-align: center;
+    color: #fff; /* Text color on top of the background */
+    position: relative; /* Establish stacking context for z-index */
+    z-index: 1; /* Ensure content is above the background */
+}
+
+#image1{
+    align-items: center;
+}
+.image3{
+    
+    width: 400px;
+    height: 600px;
+}
+.image1 {
+    width: 500px;
+    height: 500px;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.image2{
+    padding: 35px;
+    padding: 35px;
+    width: 20em;
+    height: 10em;
+    border-radius: 20px;
+    align-items: center;
+}
+img{
+    border-radius: 20px;
+}
+
+.p1{
+    font-family: italic;
+    font-size: 30px;
+    border-radius: 10px;
+}
+.p4{
+    font-size: 25px;
+}
+.p2 {
+    font-family: italic;
+    font-size: 30px;
+    border-radius: 10px;
+    background-color: rgba(33, 150, 243, 0.2); /* Background color with opacity */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+     /* Soft shadow effect */
+}
+
+.list-text ul,
+.list-text li {
+    list-style-type: none;
+    font-size: 30px;
+    display: block;
+    justify-content: first baseline;
+    padding: 10px;
+}
+.list-text ul li img{
+    display: block;
+    margin: auto;
+    margin-top: 5px;
+    width: 150px;
+    align-items: center;
+    padding: 50px;
+}
+.list-text ul li:hover{
+    transform: scale(1.0);
+    border-radius: 10px;
+    background-color: rgba(33, 150, 243, 0.2); /* Background color with opacity */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.list-text h4{
+    font-weight: bolder;
+    font-style: oblique;
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 40px;
+    text-decoration: overline;
+}
+
+.icon {
+    display: column;
+    width: 80px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    margin: 0 10px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+li{
+    display: contents;
+}
+
+.top:hover,
+.icon:hover ,button:hover{
+    transform: scale(1.2);
+}
+footer{
+    font-size: 15px;
+    border-radius: 10px;
+    background-color: rgba(33, 150, 243, 0.2); /* Background color with opacity */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+button{
+    background: rgba(255, 0, 0, 0.432);
+    border: none;
+    border-radius: 20px;
+    font-size: 10px;
+    padding: 10px;
+    opacity: 0.5;
+}
+address{
+    font-size: 20px;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    body{
+        align-items: center;
+        padding: 10px;
+    }
+
+    .image2 {
+    margin: 10px;
+    padding: 20px;
+    align-items: center;
+    width: 120%;
+    height: 150%;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    .p1, .p2 {
+        font-size: 24px;
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+
+    /* Make images more responsive */
+    .image1 {
+        left: 10px;
+        align-items: center;
+        padding: 5%;
+        margin: 0;
+        width: 30em;
+        height: 100%;
+    }
+    .image3{
+        width: 100%;
+        height: 150%;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .image1 {
+        width: 700px;
+        height: 500px;
+        border-radius: 20px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    body{
+        align-items: center;
+        padding: 10px;
+    }
+    .list-text ul li img{
+        width: 500px;
+    }
+    /* Further adjustments for smaller devices */
+    h1 {
+        font-size: 28px;
+    }
+
+    .p1, .p2 {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    /* Adjust padding for smaller buttons and inputs */
+    input, button {
+        padding: 10px;
+    }
+    .image3{
+        width: 400px;
+        height: 150%;
+    }
+}
